@@ -29,7 +29,6 @@ with basic HTML skills to write templates
 - Allow (*encourage*) use of *partial* templates
 
 
-Confirm FS is watching...
 
 ## Background
 
@@ -43,3 +42,29 @@ EJS (rails) suffers from the same waste of bytes.
 and since the curly brace already has auto-close/complete in most editors
 it makes it *faster* to type. 
 
+Express View Renderer:
+https://github.com/visionmedia/express/blob/master/lib/response.js#L762
+
+http://expressjs.com/guide.html#debugging-express
+
+### Inspiration
+
+- ECT: https://github.com/baryshev/ect + http://ectjs.com/#benchmark
+- Dustjs: https://github.com/akdubya/dustjs + 
+(LinkedIn) https://github.com/linkedin/dustjs +
+(Express) https://github.com/klei-dev/dust
+- Handlebars: http://handlebarsjs.com/ + 
+https://github.com/wycats/handlebars.js +
+https://github.com/donpark/hbs
+
+
+### Watching Files For Changes
+
+> ***Quis custodiet ipsos custodes***
+
+- http://nodejs.org/api/fs.html#fs_fs_watch_filename_options_listener
+
+
+### Headless Testing
+
+- https://github.com/sgentle/phantomjs-node

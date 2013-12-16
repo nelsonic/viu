@@ -1,0 +1,11 @@
+{
+  "name"          : "viu",
+  "version"       : "0.0.1",
+  "description"   : "Micro templates for web and node.js apps",
+  "author"        : "@nelsonic",
+  "contributors"  : [],
+  "url"           : "",
+  "keywords"      : ["templates", "views","fast"],
+  "main"          : "./lib/viu",
+  "scripts"       : { "test": "mocha" }
+}
