@@ -10,6 +10,7 @@ I decided to try writing my own.
 
 - *Excessive* **Complexity** (too many "Features")
 - *Inconsistent* (Unit/Client) **Testing**
+- criptic sintax (erb/jade ... :-( )
 
 ## Objectives
 
