@@ -3,6 +3,8 @@ viu
 
 Simple semantic HTML templates for node.js and browser apps.
 
+# Why?
+
 Frustrated with the complexity of the available JavaScript rendering engines,
 I decided to try writing my own.
 
@@ -16,7 +18,7 @@ I decided to try writing my own.
 
 - **Minimal** Learning Curve with micro-set of features allowing *anyone* 
 with basic HTML skills to write templates
-- **Logic-less** (no code in views)
+- **Logic-less** (*no code* in views)
 - **Security** Focus: Code escaped by default
 - **Translation** without losing the will to live!
 
@@ -35,6 +37,11 @@ with basic HTML skills to write templates
 - ***Automatic Translation*** to browser's headers['Accept-Language']
 (with option for user to specify prefered language in their preferences
 e.g. if I'm visiting a foreign country or using my Russian friend's laptop...)
+
+
+# How
+
+
 
 
 ## Decisions
@@ -120,13 +127,19 @@ https://github.com/donpark/hbs
 - **EJS** (server *only*): https://github.com/visionmedia/ejs
 
 
-### Watching Files For Changes
+#### Watching Files For Changes
 
 > ***Quis custodiet ipsos custodes***
 
 - http://nodejs.org/api/fs.html#fs_fs_watch_filename_options_listener
 
 
-### Headless Testing
+#### Headless Testing
 
 - https://github.com/sgentle/phantomjs-node
+
+#### Parsing
+
+- http://stackoverflow.com/questions/2024732/parsing-text-with-javascript
+- http://www.javascriptkit.com/javatutors/string4.shtml
+- https://github.com/appleifreak/simple-text-parser
