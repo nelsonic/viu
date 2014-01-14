@@ -90,6 +90,10 @@ I prefer to use (*human-readable*) **words** where ever possible to
   {end each}
 </ul>
 ```
+### Partials
+
+We need to decide what the most intuitive way of rendering partials is.
+
 
 Including a partial view:
 
