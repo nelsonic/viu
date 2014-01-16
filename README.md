@@ -30,7 +30,7 @@ with basic HTML skills to write templates
 - 100% Test Coverage with human-readable tests (without grunt!)
 - Use single curly brackets for variable placeholders `{name}`
 - Allow (*encourage*) use of *partial* templates
-- Automatic reloading of changed templates (ect)
+- (Optional) Automatic reloading of changed templates (ect)
 
 ### (*Very*) Nice to Have
 
@@ -41,7 +41,14 @@ e.g. if I'm visiting a foreign country or using my Russian friend's laptop...)
 
 # How
 
+## Simple Render Function
 
+a simple function call: (no template specified)
+```javascript
+v(options);
+```
+
+`fs.readFileSync(templatefile)`
 
 
 ## Decisions
@@ -90,10 +97,17 @@ I prefer to use (*human-readable*) **words** where ever possible to
   {end each}
 </ul>
 ```
-### Partials
+### Partial Views
 
-We need to decide what the most intuitive way of rendering partials is.
+We need to decide what the *most intuitive* way of rendering partials is.
+[ If you don't know what a partial is, see:
+http://stackoverflow.com/questions/7085156/what-are-partial-views ]
 
+**Two Options**:
+
+**1** - Define a Layout File when rendering your view
+
+**2** - Include a header and footer in your view
 
 Including a partial view:
 
