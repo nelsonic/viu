@@ -241,7 +241,7 @@ will create an entry in config.js for **default_page_title**
 
 
 
-### Premature Optimization
+### (Premature) Optimization
 
 It occured to me that we could  render templates 
 without the whitespace (between tags)
@@ -271,7 +271,19 @@ So lets put that off for as long as possible
 > "Premature optimization is the root of all evil." 
 > ~ Donald Knuth (Computer Programming as an Art - 1974)
 
+#### The Rules Of Optimization
+
+1. **Make it work**.
+2. **Make it right** (the code is readable [uses IntentionRevealingNames] and every idea is expressed **OnceAndOnlyOnce**).
+3. **Make** ***everything*** **work**.
+4. **Make** ***everything*** **right**.
+5. **Use** the **system** and **find performance bottlenecks**.
+6. **Use** a ***profiler*** in those bottlenecks to determine what needs to be optimized. 
+(***ProfileBeforeOptimizing***)
+7. **Make it fast**. You maintained unit tests, right? Then you can refactor the code mercilessly in order to improve the performance.
+
 #### Read
 - HTML minification should be the *last* thing you do to optimize your website:
  http://stackoverflow.com/questions/728260/html-minification
+- Premature optimization is the root of all evilhttp://c2.com/cgi/wiki?PrematureOptimization
 
