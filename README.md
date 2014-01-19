@@ -255,7 +255,7 @@ without the whitespace (between tags)
 		<title>My Page Title</title>
 	</head>
 	<body>
-		<h1>Simple html file without variables</h1>
+		<h1>Whitespace aids readability</h1>
 	</body>
 </html>
 ```
@@ -283,7 +283,10 @@ So lets put that off for as long as possible
 7. **Make it fast**. You maintained unit tests, right? Then you can refactor the code mercilessly in order to improve the performance.
 
 #### Read
+
 - HTML minification should be the *last* thing you do to optimize your website:
  http://stackoverflow.com/questions/728260/html-minification
 - Premature optimization is the root of all evilhttp://c2.com/cgi/wiki?PrematureOptimization
+- Google Page Speed advice: https://developers.google.com/speed/docs/insights/MinifyResources
+- Eventually: http://www.willpeavy.com/minifier/
 
