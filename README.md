@@ -102,6 +102,43 @@ I prefer to use (*human-readable*) **words** where ever possible to
   {end each}
 </ul>
 ```
+
+### Parameters for Functions/Methods
+
+Need to decide how to set up the main method.
+We can either list out all the parameters inline. e.g:
+```
+render(options, view, layout_file, callback) {
+	// render code here
+}
+```
+***Or*** just use the options object to specify all parameters
+```
+render(options) {
+	// check view_file is set in options
+    if (typeof options.view_file === 'undefined') {
+        options.view_file = config.default_view;
+    }
+}
+```
+
+I tend to favor spelling out all the available parameters because it
+makes learning how to use a method/function easier. 
+But one can just as easily argue that having too many parameters 
+is confusing if they aren't all being used.
+
+Lets try the single options parameter and see what people think/say.
+
+For our first test we don't even *need* a parameter! So lets write that first!
+
+#### More Detail
+
+- Default Parameters:
+http://docs.nodejitsu.com/articles/javascript-conventions/how-to-create-default-parameters-for-functions
+- Multiple parameters vs. single options object:
+http://stackoverflow.com/questions/12826977/multiple-arguments-vs-options-object
+
+
 ### Partial Views
 
 We need to decide what the *most intuitive* way of rendering partials is.
@@ -201,4 +238,40 @@ e.g:
 <title>{title || default_page_title} </title>
 ```
 will create an entry in config.js for **default_page_title**
+
+
+
+### Premature Optimization
+
+It occured to me that we could  render templates 
+without the whitespace (between tags)
+(i.e. minify our html) e.g:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Page Title</title>
+	</head>
+	<body>
+		<h1>Simple html file without variables</h1>
+	</body>
+</html>
+```
+Would become:
+```html
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>My Page Title</title></head><body><h1>Goodbye Whitespace</h1></body></html>
+```
+
+But this makes viewing/reading page source & debugging a nightmare!
+So lets put that off for as long as possible 
+(until enough developers requests it).
+
+> "Premature optimization is the root of all evil." 
+> ~ Donald Knuth (Computer Programming as an Art - 1974)
+
+#### Read
+- HTML minification should be the *last* thing you do to optimize your website:
+ http://stackoverflow.com/questions/728260/html-minification
 
