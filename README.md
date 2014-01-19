@@ -31,6 +31,7 @@ with basic HTML skills to write templates
 - Use single curly brackets for variable placeholders `{name}`
 - Allow (*encourage*) use of *partial* templates
 - (Optional) Automatic reloading of changed templates (ect)
+- HTML should be Valid and Accessible: http://validator.w3.org/
 
 ### (*Very*) Nice to Have
 
