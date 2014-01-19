@@ -31,7 +31,8 @@ with basic HTML skills to write templates
 - Use single curly brackets for variable placeholders `{name}`
 - Allow (*encourage*) use of *partial* templates
 - (Optional) Automatic reloading of changed templates (ect)
-- HTML should be Valid and Accessible: http://validator.w3.org/
+- **Valid and Accessible HTML** using http://validator.w3.org/
+- **Measurable Performance** (see if/when/why your app is getting *slower*!)
 
 ### (*Very*) Nice to Have
 
@@ -49,7 +50,10 @@ a simple function call: (no template specified)
 v(options);
 ```
 
-`fs.readFileSync(templatefile)`
+Try: `node test/exampleapp.js`
+
+
+
 
 
 ## Decisions
@@ -146,19 +150,30 @@ https://github.com/donpark/hbs
 - **EJS** (server *only*): https://github.com/visionmedia/ejs
 
 
-#### Watching Files For Changes
+### Watching Files For Changes
 
 > ***Quis custodiet ipsos custodes***
 
 - http://nodejs.org/api/fs.html#fs_fs_watch_filename_options_listener
 
 
-#### Headless Testing
+### Headless Testing
 
 - https://github.com/sgentle/phantomjs-node
 
-#### Parsing
+### Parsing
 
 - http://stackoverflow.com/questions/2024732/parsing-text-with-javascript
 - http://www.javascriptkit.com/javatutors/string4.shtml
 - https://github.com/appleifreak/simple-text-parser
+
+### HTML Validation
+
+![I love valid html](http://www.w3.org/QA/Tools/I_heart_validator_lg "I love valid html")
+
+- HTML 5 Draft Spec: http://www.w3.org/html/wg/drafts/html/master/ + http://www.w3.org/TR/html5/
+- Existing module (validator.js): https://github.com/chriso/validator.js
+
+This is a problem:
+
+[Amazon fails validation](http://i.imgur.com/vZtbAwY.png "Amazon fails validation - *Badly*")
