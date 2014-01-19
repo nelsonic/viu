@@ -50,7 +50,7 @@ a simple function call: (no template specified)
 v(options);
 ```
 
-Try: `node test/exampleapp.js`
+Try: `nodemon test/exampleapp.js`
 
 
 
@@ -176,4 +176,29 @@ https://github.com/donpark/hbs
 
 This is a problem:
 
-[Amazon fails validation](http://i.imgur.com/vZtbAwY.png "Amazon fails validation - *Badly*")
+![Amazon fails validation](http://i.imgur.com/vZtbAwY.png "Amazon fails validation - *Badly*")
+
+
+### Avoiding Information Overload
+
+When you first start learning a new framework/system its easy 
+to be *overwhelmed* by an excess of *jargon*. 
+
+What if instead of overloading people we had a learning process 
+where each concept was broken down into a 5-30 second tutorial 
+you had to go through *before* moving on?
+
+### Auto-Generated Configuration File
+
+Rather than having a giant configuration file with *many* options
+*most* people aren't going to use. We build a file-scanner into the 
+**watcher** that adds config option to the config.js file each time
+a variable is registered with the **default_** prefix.
+
+e.g:
+
+```
+<title>{title || default_page_title} </title>
+```
+will create an entry in config.js for **default_page_title**
+
