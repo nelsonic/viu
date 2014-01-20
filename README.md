@@ -1,10 +1,11 @@
-viu    [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
-	   [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu)
-======
+viu
+=====    
 
-Simple semantic HTML templates for node.js and browser apps.
+[![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
+<!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
 
-# Why?
+
+# (Start With) Why?
 
 ***Frustrated*** with the ***complexity*** of the **available** JavaScript/Node.js **rendering engines**,
 I *decided* to try **writing my own**.
