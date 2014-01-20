@@ -5,14 +5,14 @@ Simple semantic HTML templates for node.js and browser apps.
 
 # Why?
 
-Frustrated with the complexity of the available JavaScript rendering engines,
-I decided to try writing my own.
+***Frustrated*** with the ***complexity*** of the **available** JavaScript/Node.js **rendering engines**,
+I *decided* to try **writing my own**.
 
 ## (Short) List of Gripes
 
 - *Excessive* **Complexity** (too many "Features")
 - *Inconsistent* (Unit/Client) **Testing**
-- criptic sintax (erb/jade ... :-( )
+- *Cryptic* syntax (erb/jade ... :-( )
 
 ## Objectives
 
@@ -39,6 +39,8 @@ with basic HTML skills to write templates
 - ***Automatic Translation*** to browser's headers['Accept-Language']
 (with option for user to specify prefered language in their preferences
 e.g. if I'm visiting a foreign country or using my Russian friend's laptop...)
+- **Client side** view of all unit tests (do not require running tests
+from command line - which puts new people off!)
 
 
 # How
@@ -47,7 +49,9 @@ e.g. if I'm visiting a foreign country or using my Russian friend's laptop...)
 
 a simple function call: (no template specified)
 ```javascript
-v(options);
+V(options, function(data){
+	response.end(data);
+});
 ```
 
 Try: `nodemon test/exampleapp.js`

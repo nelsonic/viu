@@ -3,7 +3,7 @@ fs = require('fs'),
 path = require('path'),
 V = require('../lib/viu');
 
-// render html file without any variables
+// an html file without any variables
 var options = {};
 options.view = 'no_variables';
 var view_file = path.resolve('../viu/test/views/'+options.view+'.html');
