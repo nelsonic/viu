@@ -5,7 +5,7 @@
   "author"        : "@nelsonic",
   "contributors"  : [],
   "url"           : "",
-  "keywords"      : ["templates", "views","fast"],
+  "keywords"      : ["templates", "views", "fast"],
   "main"          : "./lib/viu",
-  "scripts"       : { "test": "mocha" }
+  "scripts"       : { "test": "node test/spec.js" }
 }
