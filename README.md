@@ -1,4 +1,5 @@
-viu
+viu    [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
+	   [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu)
 ======
 
 Simple semantic HTML templates for node.js and browser apps.
