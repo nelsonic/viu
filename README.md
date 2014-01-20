@@ -57,7 +57,19 @@ V(options, function(data){
 Try: `nodemon test/exampleapp.js`
 
 
+## Unit Testing 
 
+Rather than forcing people to download the code and run
+the tests on the command line I've decided to use the browser-based
+unit testing framework **QUnit** and **blanket.js**.
+This creates more work in the short-run but holds several clear benefits:
+
+> Next:
+
+- http://www.ianlewis.org/en/phantom-qunit-test-runner
+- https://github.com/IanLewis/phantomjs-qunit
+- http://qunitjs.com/plugins/
+- https://github.com/Krinkle/qunit-theme-ninja
 
 
 ## Decisions
