@@ -1,14 +1,14 @@
 viu
 =====    
 
+***Frustrated*** with the ***complexity*** of the existing JavaScript/Node.js **rendering engines**,
+I *decided* to try **writing my own**.
+
 [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
 <!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
 
 
 # (Start With) Why?
-
-***Frustrated*** with the ***complexity*** of the **available** JavaScript/Node.js **rendering engines**,
-I *decided* to try **writing my own**.
 
 ## (Short) List of Gripes
 
