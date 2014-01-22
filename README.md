@@ -1,4 +1,4 @@
-viu
+viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
 =====    
 
 ***Frustrated*** with the ***complexity*** <br />
@@ -10,7 +10,7 @@ The *aim* is ***simplicity*** *not* "Bells and Whistle" <br />
 and ***speed*** because *time is our scarecest asset*.
 
 
-[![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
+
 <!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
 
 
