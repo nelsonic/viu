@@ -24,6 +24,8 @@ options = {
 };
 var str = "The {cat} with in the { hat } sat on the mat."
 Parse(options, str, function(rendered){
-	console.log(rendered);
+	var expected = "The Clever Cat in the Top Hat sat on the mat."
+	assert.equal(rendered, expected);
+	console.log("Simple Variable Substitution "+check);
 });
 

@@ -1,17 +1,18 @@
 viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
 =====    
 
+<!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
+
 ***Frustrated*** with the ***complexity*** <br />
 of the existing JavaScript/Node.js **rendering engines**, <br />
 I *decided* to **write my own**.
 
-The *aim* is ***simplicity*** *not* "Bells and Whistle" <br />
-***security*** not fancy feature "xyz" <br />
-and ***speed*** because *time is our scarecest asset*.
+The *aim* is ***Simplicity*** *not* "Bells and Whistles" <br />
+***Security*** not *fancy feature* "xyz" <br />
+and ***Speed*** because *time is our scarecest resource*.
 
 
 
-<!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
 
 
 # (Start With) Why?
