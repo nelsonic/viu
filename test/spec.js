@@ -22,7 +22,7 @@ options = {
 	cat: "Clever Cat",
 	hat: "Top Hat"
 };
-var str = "The {cat} with in the { hat } sat on the mat."
+var str = "The {cat} in the { hat } sat on the mat."
 Parse(options, str, function(rendered){
 	var expected = "The Clever Cat in the Top Hat sat on the mat."
 	assert.equal(rendered, expected);
