@@ -5,7 +5,10 @@ V = require('../lib/viu');
 var server = http.createServer(function (request, response) {
   console.log(request.url);
   response.writeHead(200, {"Content-Type": "text/html"});
-  options = {"view":"no_variables"};
+  options = {"view":"basic_variables"};
+  options.title = "My First Parsed Page!"
+  options.name = "Tigeroony";
+
   V(options, function(err, data){
   	response.end(data);
   });
