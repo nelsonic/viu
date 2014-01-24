@@ -1,21 +1,17 @@
-var http = require('http'),
-V = require('../lib/viu');
+var V = require('../lib/viu'),
+port = 8000; 
 
-// Configure our HTTP server to respond with Hello World to all requests.
-var server = http.createServer(function (request, response) {
+var server = require('http').createServer(function (request, response) {
   console.log(request.url);
   response.writeHead(200, {"Content-Type": "text/html"});
-  options = {"view":"basic_variables"};
-  options.title = "My First Parsed Page!"
-  options.name = "Tigeroony";
-
+  options = {
+  		"view"  :"basic_variables", 
+  		"title" : "My First Parsed Page!",
+  		"name"  : "Your Name Here"
+  }
   V(options, function(err, data){
   	response.end(data);
   });
-});
+}).listen(port); // Listen on port 8000
 
-// Listen on port 8000, IP defaults to 127.0.0.1
-server.listen(8000);
-
-// Put a friendly message on the terminal
-console.log("Server running at http://127.0.0.1:8000/");
+console.log("Server running @ http://127.0.0.1:"+port);

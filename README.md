@@ -56,14 +56,33 @@ from command line - which puts new people off!)
 
 ## Simple Render Function
 
-a simple function call: (no template specified)
+A simple function call: (no template specified)
+
 ```javascript
-V(options, function(data){
+V(options, function(err, data){
 	response.end(data);
 });
 ```
 
 Try: `nodemon test/exampleapp.js`
+Visit: http://localhost:8000/
+Run: ab -n 4000 -c 120 http://localhost:8000/
+
+
+## Default Values
+
+The ability to have default values in templates is handy.
+e.g:
+
+```
+{ site_name or default_site_name }
+
+
+```
+
+
+
+
 
 
 ## Unit Testing 
@@ -72,6 +91,10 @@ Rather than forcing people to download the code and run
 the tests on the command line I've decided to use the browser-based
 unit testing framework **QUnit** and **blanket.js**.
 This creates more work in the short-run but holds several clear benefits:
+
+- *Anyone* can run/view the tests simply by visiting the tests url.
+- **No Command Line** to overwhelm beginners.
+- Nothing to install/configure
 
 > Next:
 
@@ -101,6 +124,8 @@ e.g:
  {/names}
 </ul>
 ```
+
+
 
 Handlebars by contrast uses the **#each** notation for itteration:
 

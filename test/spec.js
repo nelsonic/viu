@@ -14,7 +14,7 @@ var check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 	V(options, function(err, novars){
 			// console.log(data)
 			assert.equal(novars, html1);
-			console.log("Simple View Without Variables "+check);
+			console.log("Viu:Simple View Without Variables "+check);
 	});
 }());
 
