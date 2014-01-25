@@ -76,10 +76,8 @@ e.g:
 
 ```
 { site_name or default_site_name }
-
-
 ```
-
+What type of configuration file should we use...?
 
 
 
