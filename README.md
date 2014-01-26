@@ -5,7 +5,7 @@ viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](http
 
 ***Frustrated*** with the ***complexity*** <br />
 of the existing JavaScript/Node.js **rendering engines**, <br />
-I *decided* to **write my own**.
+I *decided* to write something **light**.
 
 The *aim* is ***Simplicity*** *not* "Bells and Whistles" <br />
 ***Security*** not *fancy feature* "xyz" <br />
@@ -78,7 +78,7 @@ e.g:
 { site_name or default_site_name }
 ```
 What type of configuration file should we use...?
-
+http://en.wikipedia.org/wiki/Configuration_file
 
 
 

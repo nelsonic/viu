@@ -1,8 +1,9 @@
 var assert = require('assert'),
-fs = require('fs'),
-path = require('path'),
-V = require('../lib/viu');
-var check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
+fs    = require('fs'),
+path  = require('path'),
+V     = require('../lib/viu'),
+Parse = require('../lib/parser');
+check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 
 (function(){
 	// an html file without any variables
@@ -20,12 +21,11 @@ var check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 
 (function(){
 	// test simple placeholder substitution
-	Parse = require('../lib/parser');
-	options = {
+	var options = {
 		cat: "Clever Cat",
 		hat: "Top Hat"
-	};
-	var str = "The {cat} in the { hat } sat on the mat."
+	},
+	str = "The {cat} in the { hat } sat on the mat." // whitespace optional
 	Parse(options, str, function(err, rendered){
 		var expected = "The Clever Cat in the Top Hat sat on the mat."
 		assert.equal(rendered, expected);
@@ -42,11 +42,9 @@ var check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 	var view_file = path.resolve('../viu/test/views/'+options.view+'.html');
 
 	html = fs.readFileSync(view_file, 'utf8');
-	// console.log(html);
+
 	V(options, function(err, data){
 		Parse(options, html, function(err, parsedstr){
-			// console.log(data);
-			// console.log(parsedstr);
 			assert.equal(data, parsedstr);
 			console.log("Viu:Simple View With Variables "+check);
 		})
