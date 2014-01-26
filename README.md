@@ -1,4 +1,4 @@
-viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) 
+viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) [![Code Climate](https://codeclimate.com/github/nelsonic/viu.png)](https://codeclimate.com/github/nelsonic/viu)
 =====    
 
 <!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
