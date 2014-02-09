@@ -1,25 +1,27 @@
+'use strict';
 var assert = require('assert'),
 fs    = require('fs'),
 path  = require('path'),
 V     = require('../lib/viu'),
-Parse = require('../lib/parser');
+Parse = require('../lib/parser'),
 check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 
-(function(){
-	// an html file without any variables
+// an html file without any variables
+(function() {
+
 	var options = {};
 	options.view = 'no_variables';
 	var view_file = path.resolve('../viu/test/views/'+options.view+'.html');
 
 	var html = fs.readFileSync(view_file, 'utf8');
-	V(options, function(err, novars){
+	V(options, function(err, novars) {
 			// console.log(data)
 			assert.equal(novars, html);
 			console.log("Viu:Simple View Without Variables "+check);
-	});
+		});
 }());
 
-(function(){
+(function() {
 	// test simple placeholder substitution
 	var options = {
 		cat: "Clever Cat",
@@ -33,7 +35,7 @@ check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 	});
 })();
 
-(function(){
+(function() {
 	// an html file WITH basic variables
 	var options = {};
 	options.view = 'basic_variables';
