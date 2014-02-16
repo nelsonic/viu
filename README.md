@@ -13,8 +13,6 @@ and ***Speed*** because *time is our scarecest resource*.
 
 
 
-
-
 # (Start With) Why?
 
 ## (Short) List of Gripes
@@ -42,6 +40,11 @@ with basic HTML skills to write templates
 - (Optional) Automatic reloading of changed templates (ect)
 - **Valid and Accessible HTML** using http://validator.w3.org/
 - **Measurable Performance** (see if/when/why your app is getting *slower*!)
+
+## Security Focus
+
+- Compliance with all OWASP XSS prevention rules. see:
+https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#XSS_Prevention_Rules
 
 ### (*Very*) Nice to Have
 
