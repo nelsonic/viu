@@ -11,7 +11,8 @@ The *aim* is ***Simplicity*** *not* "Bells and Whistles" <br />
 ***Security*** not *fancy feature* "xyz" <br />
 and ***Speed*** because *time is our scarecest resource*.
 
-
+> slight detour. currently building an app in meteor.
+> will come back to this soon.
 
 # (Start With) Why?
 
@@ -43,8 +44,10 @@ with basic HTML skills to write templates
 
 ## Security Focus
 
+- **ALL** Data is **escaped** ***by default**
 - Compliance with all OWASP XSS prevention rules. see:
 https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#XSS_Prevention_Rules
+
 
 ### (*Very*) Nice to Have
 
