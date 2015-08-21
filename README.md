@@ -1,5 +1,6 @@
 viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) [![Code Climate](https://codeclimate.com/github/nelsonic/viu.png)](https://codeclimate.com/github/nelsonic/viu)
-=====    
+[![Dependency Status](https://david-dm.org/nelsonic/viu.svg)](https://david-dm.org/nelsonic/viu)
+=====
 
 <!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
 
@@ -24,7 +25,7 @@ and ***Speed*** because *time is our scarecest resource*.
 
 ## Objectives
 
-- **Minimal** Learning Curve with micro-set of features allowing *anyone* 
+- **Minimal** Learning Curve with micro-set of features allowing *anyone*
 with basic HTML skills to write templates
 - **Logic-less** (*no code* in views)
 - **Security** Focus: Code escaped by default
@@ -89,7 +90,7 @@ http://en.wikipedia.org/wiki/Configuration_file
 
 
 
-## Unit Testing 
+## Unit Testing
 
 Rather than forcing people to download the code and run
 the tests on the command line I've decided to use the browser-based
@@ -116,9 +117,9 @@ The advantage of using characters is fewer bytes are consumed.
 Which means less data is transmitted over the wire and apps are faster.
 The dissadvantage is that templates are less human-readable...
 
-e.g: 
+e.g:
 
-- **#** (hash) for iteration/enumeration 
+- **#** (hash) for iteration/enumeration
 (as in [dust](https://github.com/linkedin/dustjs/wiki/Dust-Tutorial))
 
 ```html
@@ -141,7 +142,7 @@ Handlebars by contrast uses the **#each** notation for itteration:
 </ul>
 ```
 
-The **#** (hash) character could be considered "loaded" because of its 
+The **#** (hash) character could be considered "loaded" because of its
 significance in CSS and Ruby (#id and #comment respectively)
 But there aren't that many characters *available* on a standard keyboard ...
 So we may need to *repurpose* a few ...
@@ -177,8 +178,8 @@ render(options) {
 ```
 
 I tend to favor spelling out all the available parameters because it
-makes learning how to use a method/function easier. 
-But one can just as easily argue that having too many parameters 
+makes learning how to use a method/function easier.
+But one can just as easily argue that having too many parameters
 is confusing if they aren't all being used.
 
 Lets try the single options parameter and see what people think/say.
@@ -214,15 +215,15 @@ Including a partial view:
 
 ## Background
 
-There is *no shortage* of templating modules: 
+There is *no shortage* of templating modules:
 https://github.com/joyent/node/wiki/modules#wiki-templating
 
 I am not a fan of how underscore/EJS require *four* signifier
-characters for *each* variable placeholder or iterator `<%= name %>`. 
+characters for *each* variable placeholder or iterator `<%= name %>`.
 EJS (rails) suffers from the same waste of bytes.
 **Dust.js** can do it with only two: `{name}`
 and since the curly brace already has auto-close/complete in most editors
-it makes it *faster* to type. 
+it makes it *faster* to type.
 
 Express View Renderer:
 https://github.com/visionmedia/express/blob/master/lib/response.js#L762
@@ -232,10 +233,10 @@ http://expressjs.com/guide.html#debugging-express
 ### Inspiration
 
 - ECT: https://github.com/baryshev/ect + http://ectjs.com/#benchmark
-- Dustjs: https://github.com/akdubya/dustjs + 
+- Dustjs: https://github.com/akdubya/dustjs +
 (LinkedIn) https://github.com/linkedin/dustjs +
 (Express) https://github.com/klei-dev/dust
-- Handlebars: http://handlebarsjs.com/ + 
+- Handlebars: http://handlebarsjs.com/ +
 https://github.com/wycats/handlebars.js +
 https://github.com/donpark/hbs
 - **EJS** (server *only*): https://github.com/visionmedia/ejs
@@ -272,17 +273,17 @@ This is a problem:
 
 ### Avoiding Information Overload
 
-When you first start learning a new framework/system its easy 
-to be *overwhelmed* by an excess of *jargon*. 
+When you first start learning a new framework/system its easy
+to be *overwhelmed* by an excess of *jargon*.
 
-What if instead of overloading people we had a learning process 
-where each concept was broken down into a 5-30 second tutorial 
+What if instead of overloading people we had a learning process
+where each concept was broken down into a 5-30 second tutorial
 you had to go through *before* moving on?
 
 ### Auto-Generated Configuration File
 
 Rather than having a giant configuration file with *many* options
-*most* people aren't going to use. We build a file-scanner into the 
+*most* people aren't going to use. We build a file-scanner into the
 **watcher** that adds config option to the config.js file each time
 a variable is registered with the **default_** prefix.
 
@@ -297,7 +298,7 @@ will create an entry in config.js for **default_page_title**
 
 ### (Premature) Optimization
 
-It occured to me that we could  render templates 
+It occured to me that we could  render templates
 without the whitespace (between tags)
 (i.e. minify our html) e.g:
 
@@ -319,10 +320,10 @@ Would become:
 ```
 
 But this makes viewing/reading page source & debugging a nightmare!
-So lets put that off for as long as possible 
+So lets put that off for as long as possible
 (until enough developers requests it).
 
-> "Premature optimization is the root of all evil." 
+> "Premature optimization is the root of all evil."
 > ~ Donald Knuth (Computer Programming as an Art - 1974)
 
 #### The Rules Of Optimization
@@ -332,7 +333,7 @@ So lets put that off for as long as possible
 3. **Make** ***everything*** **work**.
 4. **Make** ***everything*** **right**.
 5. **Use** the **system** and **find performance bottlenecks**.
-6. **Use** a ***profiler*** in those bottlenecks to determine what needs to be optimized. 
+6. **Use** a ***profiler*** in those bottlenecks to determine what needs to be optimized.
 (***ProfileBeforeOptimizing***)
 7. **Make it fast**. You maintained unit tests, right? Then you can refactor the code mercilessly in order to improve the performance.
 
@@ -343,4 +344,3 @@ So lets put that off for as long as possible
 - Premature optimization is the root of all evilhttp://c2.com/cgi/wiki?PrematureOptimization
 - Google Page Speed advice: https://developers.google.com/speed/docs/insights/MinifyResources
 - Eventually: http://www.willpeavy.com/minifier/
-
