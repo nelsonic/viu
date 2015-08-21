@@ -1,10 +1,10 @@
 'use strict';
-var assert = require('assert'),
-fs    = require('fs'),
-path  = require('path'),
-V     = require('../lib/viu'),
-Parse = require('../lib/parser'),
-check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
+var assert = require('assert');
+var fs     = require('fs');
+var path   = require('path');
+var viu    = require('../lib/viu');
+var Parser = require('../lib/parser');
+var check  = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 
 // an html file without any variables
 (function() {
@@ -14,7 +14,7 @@ check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 	var view_file = path.resolve('../viu/test/views/'+options.view+'.html');
 
 	var html = fs.readFileSync(view_file, 'utf8');
-	V(options, function(err, novars) {
+	viu(options, function(err, novars) {
 			// console.log(data)
 			assert.equal(novars, html);
 			console.log("Viu:Simple View Without Variables "+check);
@@ -28,7 +28,7 @@ check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 		hat: "Top Hat"
 	},
 	str = "The {cat} in the { hat } sat on the mat."; // whitespace optional
-	Parse(options, str, function(err, rendered){
+	Parser(options, str, function(err, rendered){
 		var expected = "The Clever Cat in the Top Hat sat on the mat.";
 		assert.equal(rendered, expected);
 		console.log("Parser:Simple Variable Substitution "+check);
@@ -45,7 +45,7 @@ check = "\u2713"; // http://www.fileformat.info/info/unicode/char/2713
 
 	var html = fs.readFileSync(view_file, 'utf8');
 
-	V(options, function(err, data){
+	viu(options, function(err, data){
 		Parse(options, html, function(err, parsedstr){
 			assert.equal(data, parsedstr);
 			console.log("Viu:Simple View With Variables "+check);

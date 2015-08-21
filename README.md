@@ -1,5 +1,4 @@
-viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) [![Code Climate](https://codeclimate.com/github/nelsonic/viu.png)](https://codeclimate.com/github/nelsonic/viu)
-[![Dependency Status](https://david-dm.org/nelsonic/viu.svg)](https://david-dm.org/nelsonic/viu)
+# viu [![Build Status](https://travis-ci.org/nelsonic/viu.png?branch=master)](https://travis-ci.org/nelsonic/viu) [![Code Climate](https://codeclimate.com/github/nelsonic/viu.png)](https://codeclimate.com/github/nelsonic/viu) [![Dependency Status](https://david-dm.org/nelsonic/viu.svg)](https://david-dm.org/nelsonic/viu)
 =====
 
 <!-- [![Dependencies](https://david-dm.org/nelsonic/viu.png)](https://david-dm.org/nelsonic/viu) -->
@@ -10,18 +9,16 @@ I *decided* to write something **light**.
 
 The *aim* is ***Simplicity*** *not* "Bells and Whistles" <br />
 ***Security*** not *fancy feature* "xyz" <br />
-and ***Speed*** because *time is our scarecest resource*.
+and ***Speed*** because *time is our scarcest resource*.
 
-> slight detour. currently building an app in meteor.
-> will come back to this soon.
 
-# (Start With) Why?
+# (*Start* With) Why?
 
 ## (Short) List of Gripes
 
 - *Excessive* **Complexity** (too many "Features")
 - *Inconsistent* (Unit/Client) **Testing**
-- *Cryptic* syntax (erb/jade ... :-( )
+- *Cryptic* syntax (erb/jade ... *not beginner-friendly* :confused: )
 
 ## Objectives
 

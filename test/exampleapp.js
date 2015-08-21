@@ -1,15 +1,15 @@
-var V = require('../lib/viu'),
-port = 8000; 
+var render = require('../lib/viu'),
+port = 8000;
 
 var server = require('http').createServer(function (request, response) {
   console.log(request.url);
   response.writeHead(200, {"Content-Type": "text/html"});
   options = {
-  		"view"  :"basic_variables", 
+  		"view"  :"basic_variables",
   		"title" : "My First Parsed Page!",
-  		"name"  : "Your Name Here"
+  		"name"  : "Jim"
   }
-  V(options, function(err, data){
+  render(options, function(err, data){
   	response.end(data);
   });
 }).listen(port); // Listen on port 8000
